@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/82b055d4ba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+       <div class="card front">
+           <div class="bank">ING Bank Śląski</div>
+           <div class="logo"><i class="fa-brands fa-cc-visa fa-2x"></i></div>
+           <div class="number">#### #### #### ####</div>
+           <div class="owner">Imię i nazwisko</div>
+           <div class="valid">MM/YY</div>
+           
+       </div>
+       <div class="card back">
+           <div class="black-line"></div>
+           <div class="cvv-code">##pol#</div>
+       </div>
+       <div class="placeholder" id="ph1"></div>
+       <div class="placeholder" id="ph2"></div>
+
+        <div class="bank input-div">
+            <label for="bank">Wybierz bank</label>
+            <select name="bank" id="bank">
+                <option value="ing" selected>ING Bank Śląski</option>
+                <option value="pko">PKO Bank Polski</option>
+                <option value="mbank">MBank</option>
+            </select>
+        </div>
+
+
+       <div class="card-number input-div" >
+           <label for="number">Numer:</label>
+           <input type="text" name="number" id="number" placeholder="1234############">
+       </div>
+
+       <div class="owner input-div">
+           <label for="owner">Posiadacz:</label>
+           <input type="text" name="owner" id="owner" placeholder="e.g. Anka Kaszanka">
+       </div>
+
+       <div class="valid input-div">
+           <label for="month">Data ważności</label>
+           <input type="month" name="month" id="month" min="2022-12" value="2025-10">
+       </div>
+       <div class="cvv input-div">
+           <label for="cvv">CVV</label>
+           <input type="text" name="cvv" id="cvv" placeholder="e.g. 123">
+       </div>
+
+       <div class="submit input-div">
+           <input type="submit" value="Prześlij">
+       </div>
+   </div>
+</body>
+</html>

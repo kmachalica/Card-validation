@@ -24,6 +24,7 @@ body{
     grid-template-rows: repeat(8, 1fr);
     border: 5px solid gold;
     font-size: 0.7rem;
+    position: relative;
 }
 .container .card
 {
@@ -176,4 +177,22 @@ body{
 }
 .container .owner{
     font-size: 0.75rem;
+}
+.error
+{
+    position: absolute;
+    width: 200px;
+    border: 2px solid red;
+    background-color: #fff;
+    color: red;
+    font-size: 0.65rem;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+
+}
+
+.errorInput
+{
+    border: 2px solid red;
 }

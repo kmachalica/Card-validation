@@ -24,7 +24,7 @@
        </div>
        <div class="card back">
            <div class="black-line"></div>
-           <div class="cvv-code">##pol#</div>
+           <div class="cvv-code">###</div>
        </div>
        <div class="placeholder" id="ph1"></div>
        <div class="placeholder" id="ph2"></div>
@@ -35,18 +35,23 @@
                 <option value="ing" selected>ING Bank Śląski</option>
                 <option value="pko">PKO Bank Polski</option>
                 <option value="mbank">MBank</option>
+                <option value="bnp">BNP Paribas</option>
+                <option value="millenium">Millenium</option>
+                <option value="pekao">PEKAO S.A.</option>
+                <option value="alior">Alior Bank</option>
+                <option value="agricole">Credit Agricole</option>
             </select>
         </div>
 
 
        <div class="card-number input-div" >
            <label for="number">Numer:</label>
-           <input type="text" name="number" id="number" placeholder="1234############">
+           <input type="text" name="number" id="number" maxlength="16" placeholder="1234############">
        </div>
 
        <div class="owner input-div">
            <label for="owner">Posiadacz:</label>
-           <input type="text" name="owner" id="owner" placeholder="e.g. Anka Kaszanka">
+           <input type="text" name="owner" id="owner" maxlength="24" placeholder="e.g. Anka Kaszanka">
        </div>
 
        <div class="valid input-div">
@@ -55,7 +60,7 @@
        </div>
        <div class="cvv input-div">
            <label for="cvv">CVV</label>
-           <input type="text" name="cvv" id="cvv" placeholder="e.g. 123">
+           <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="e.g. 123">
        </div>
 
        <div class="submit input-div">
